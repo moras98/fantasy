@@ -48,3 +48,28 @@
     cursor: pointer;
   }
   
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .header {
+      flex-wrap: wrap;
+    }
+    
+    .nav-buttons {
+      margin-top: 16px;
+      gap: 8px;
+    }
+  
+    .user-info {
+      gap: 4px;
+      flex-wrap: wrap;
+    }
+  
+    .user-name {
+      display: none;
+    }
+  
+    .login-button {
+      font-size: 14px;
+    }
+  }
+  
