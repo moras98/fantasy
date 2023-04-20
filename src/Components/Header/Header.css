@@ -14,6 +14,7 @@
   .nav-buttons {
     display: flex;
     gap: 16px;
+    text-decoration: none;
   }
   
   .nav-button {
