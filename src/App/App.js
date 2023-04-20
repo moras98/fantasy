@@ -6,7 +6,11 @@ import {Route, RouterProvider ,createBrowserRouter, createRoutesFromElements } f
 
 const router = createBrowserRouter( createRoutesFromElements(
   <Route path="/" element={ <Root/> }>
+    <Route path='team' />
+    <Route path='/positions-table' />
     <Route path='/players-list' element={<PlayerListTable players={players} title="Top Value"/>}/>
+    <Route path='/login-page' />
+    <Route path='/profile' />
   </Route>
 ));
 

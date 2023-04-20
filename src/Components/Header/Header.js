@@ -11,19 +11,19 @@ const Header = ({ usuarioLogueado, fotoUsuario, nombreUsuario }) => {
       <img src={logoImg} alt="Logo de la app" className="logo" />
       {/* Grupo de botones de navegación */}
       <nav className="nav-buttons">
-        <NavLink className="nav-button" to="/">Inicio</NavLink>
-        <NavLink className="nav-button">Equipo</NavLink>
-        <NavLink className="nav-button" to="/players-list">Jugadores</NavLink>
-        <NavLink className="nav-button">Tabla de Posiciones</NavLink>
+        <NavLink  to="/">Inicio</NavLink>
+        <NavLink to="/team">Equipo</NavLink>
+        <NavLink  to="/players-list">Jugadores</NavLink>
+        <NavLink to="/positions-table">Tabla de Posiciones</NavLink>
       </nav>
       {/* Foto de usuario y nombre, o botón de inicio de sesión */}
       {usuarioLogueado ? (
-        <div className="user-info">
+        <NavLink className="user-info" to="profile">
           <img src={fotoUsuario} alt="Foto del usuario" className="user-avatar" />
           <div className="user-name">{nombreUsuario}</div>
-        </div>
+        </NavLink>
       ) : (
-        <NavLink className="login-button">Iniciar Sesión</NavLink>
+        <NavLink to="login-page" className="login-button">Iniciar Sesión</NavLink>
       )}
     </header>
   );
