@@ -1,7 +1,6 @@
 import './App.css';
 import PlayerListTable from './Components/PlayerList/PlayerListTable';
 import players from './data/players';
-import SearchBar from './Components/SearchBar/SearchBar';
 import Header from './Components/Header/Header';
 
 const fotoUsuario = 'https://assets.stickpng.com/images/580b57fcd9996e24bc43c325.png';
